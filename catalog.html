@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop and Soil Management System</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crop and Soil Management System</h1>
+
+        <div class="input-section">
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" placeholder="e.g., sandy, clay">
+
+            <label for="climate">Climate Zone:</label>
+            <input type="text" id="climate" placeholder="e.g., tropical, temperate">
+
+            <label for="symptoms">Crop Symptoms:</label>
+            <input type="text" id="symptoms" placeholder="e.g., yellowing leaves">
+
+            <button onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Recommendations:</h2>
+            <p id="cropRecommendation"></p>
+            <p id="soilAdvice"></p>
+            <p id="diseaseDiagnosis"></p>
+
+            <h2>General Farming Tips:</h2>
+            <ul id="farmingTips"></ul>
+        </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
